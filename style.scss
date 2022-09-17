@@ -1,0 +1,95 @@
+$color-radient: linear-gradient(to right, #a845b1, #f3429a);
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background: $color-radient;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1rem;
+}
+
+.container-login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 430px;
+  background-color: white;
+  border-radius: 5px;
+
+  .container-login-nav {
+    display: flex;
+    justify-content: space-around;
+    width: 85%;
+    text-align: center;
+
+    a {
+      border: 1px solid lightgray;
+      border-radius: 5px;
+      padding: 10px 40px;
+      width: 50%;
+      text-decoration: none;
+      margin: 20px 0;
+      font-size: 1.2rem;
+      color: black;
+
+      &:hover {
+        background: $color-radient;
+        color: white;
+      }
+    }
+  }
+}
+
+.container-login-form {
+  display: flex;
+  flex-direction: column;
+  height: 90%;
+  width: 85%;
+  padding: 0px;
+
+  a {
+    color: rgb(219, 22, 169);
+    text-decoration: none;
+  }
+
+  // still need a class if we use SASS ?
+  input {
+    margin: 10px 0;
+    border: 1px solid lightgray;
+    font-size: 1.2rem;
+    padding: 5px;
+  }
+  
+  // still need a class if we use SASS ?
+  button {
+    border: none;
+    cursor: pointer;
+    margin: 10px 0;
+    background: $color-radient;
+    color: white;
+    border-radius: 5px;
+    padding: 10px 40px;
+    font-size: 1.2rem;
+  }
+
+  span {
+    text-align: center;
+    padding: 30px;
+  }
+
+  a {
+    text-align: left;
+    margin: 2px 0 10px 0;
+  }
+}
